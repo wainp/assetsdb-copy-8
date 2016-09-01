@@ -1,0 +1,56 @@
+settings = 
+	{
+
+	iphone = 
+	{
+	plist = 
+		{
+                NSAppTransportSecurity =
+                    {
+                         NSAllowsArbitraryLoads = true,
+                    },
+                 CFBundleDisplayName = "assets",
+                CFBundleName = "assets",
+		UIPrerenderedIcon = true,
+                UIFileSharingEnabled = true,
+                 NSLocationWhenInUseUsageDescription = "Requires locations for mapping of Offices.",
+		UIStatusBarHidden = true,
+		UIApplicationExitsOnSuspend = true,
+		CFBundleIconFiles = 
+			{
+			"Icon.png" , 
+			"Icon@2x.png" , 
+			"Icon-72.png" , 
+			"Icon_1.png" , 
+			},
+                UIAppFonts = 
+			{
+			"GillSans-Book.ttf", 
+			},                 
+		},
+	},
+
+	orientation = 
+		{
+		default = "landscapeRight",
+		supported = 
+			{
+			"landscapeRight","landscapeLeft","portrait","portraitUpsideDown"
+			},
+
+		},
+
+	androidPermissions =
+		{
+		"android.permission.INTERNET"
+		},
+                plugins = {
+        ['plugin.qrscanner'] = {publisherId = 'com.spiralcodestudio'},
+        ['plugin.flashlight'] = {publisherId = 'com.spiralcodestudio'}
+
+    }
+    
+	}
+		
+
+
